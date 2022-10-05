@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
   }
   
 html {
@@ -9,7 +10,7 @@ html {
   
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 135%;
+  font-size: 130%;
   background-color: #f6f5f5;
 }
 
@@ -27,14 +28,12 @@ body {
 }
 
 #texto-presentacion p {
-  font-size: 1.2em;
   margin-bottom: 0.2em;
 }
 
 h1 {
   color: whitesmoke;
   margin-bottom: 0.5em;
-  font-size: 1.6em;
 }
 
 #bloque-presentacion {
@@ -120,13 +119,11 @@ h2 {
   
 #navbar {
   display: flex;
-  position: fixed;
   justify-content: flex-end;
-  top: 0;
-  left: 0;
+  position: fixed;
   width: 100%;
   padding: 1.2em;
-  background-color: #053245;
+  background-color: #042b3b;
   color: white;
 }
   
@@ -135,7 +132,6 @@ h2 {
 }
   
 #navbar a {
-  font-size: 1.2em;
   text-decoration: none;
   color: white;
 }
@@ -154,46 +150,46 @@ ul {
   }
   
   .projects-section-header {
-    font-size: 2.5em;
-    max-width: 550px;
-    margin: 0 auto 6rem auto;
     color: white;
   }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    margin-bottom: 6rem;
+
+  .projects-section-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .project {
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
-  }
-  
-  .project-title:hover{
-    color: #ff7f50;
+    width: 450px;
+    margin: 1em;
   }
   
   .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(100% - 7rem);
     width: 100%;
     object-fit: cover;
   }
   
   .project-title {
-    font-size: 2rem;
     padding: 2rem 0.5rem;
     background-color:  #203347;
     color: lightgrey;
+    margin-bottom: 0.8em;
+  }
+
+  .project-title:hover{
+    color: #ff7f50;
   }
   
   .projec-title, a {
     text-decoration: none;
+  }
+
+  .technologies {
+    color: #e9ba38;
+    font-size: 80%;
   }
 
   /* pie de pagina */
@@ -215,6 +211,23 @@ ul {
   footer img {
     width: 4em;
   }
+
+@media (max-width: 1250px) {
+  #about-me {
+    margin: 0;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-p {
+    margin: auto;
+  }
+
+  #about-tittle {
+    text-align: center;
+  }
+}
   
 @media (max-width: 850px) {
   html {
@@ -235,25 +248,14 @@ ul {
     margin-bottom: 2em;
   }
 
-  h1 {
-    padding-bottom: 1em;
-  }
-
-  #about-me {
-    margin: 0;
-    padding: 1.2em;
-    display: flex;
-    flex-direction: column;
-  }
-
   #about-p {
     padding: 1.5em;
   }
 
   #navbar {
-    display: block;
-    width: 100vw; 
-    padding: 1em 0em 1em;
+    width: 100vw;
+    padding: 2em;
+    justify-content: space-around;
   }
 
   #navbar li {
