@@ -1,16 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
-  
+
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 130%;
+  font-family: "Poppins", sans-serif;
+  font-size: 125%;
   background-color: #f6f5f5;
 }
 
@@ -54,11 +54,11 @@ h1 {
 }
 
 .zoom {
-  transition: transform .2s; 
+  transition: transform 0.2s;
 }
 
 .zoom:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
 }
 
 .p-tittle {
@@ -102,7 +102,7 @@ h1 {
 h2 {
   text-align: center;
   margin-bottom: 1em;
-  margin-top: 1em;  
+  margin-top: 1em;
 }
 
 #iconos-about-me {
@@ -116,7 +116,7 @@ h2 {
 }
 
 /* Navegacion */
-  
+
 #navbar {
   display: flex;
   justify-content: flex-end;
@@ -126,91 +126,105 @@ h2 {
   background-color: #042b3b;
   color: white;
 }
-  
+
 #navbar li {
   margin-right: 4em;
 }
-  
+
 #navbar a {
   text-decoration: none;
   color: white;
 }
-  
+
 ul {
   display: flex;
   list-style: none;
 }
 
-/* Proyectos */  
-  
-  .projects-section {
-    text-align: center;
-    padding: 10rem 2rem;
-    background: radial-gradient(circle, rgba(60,173,189,1) 0%, rgba(5,50,69,1) 62%, rgba(3,4,6,1) 97%);
-  }
-  
-  .projects-section-header {
-    color: white;
-  }
+/* Proyectos */
 
-  .projects-section-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .project {
-    border-radius: 2px;
-    width: 450px;
-    margin: 1em;
-  }
-  
-  .project-image {
-    height: calc(100% - 7rem);
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .project-title {
-    padding: 2rem 0.5rem;
-    background-color:  #203347;
-    color: lightgrey;
-    margin-bottom: 0.8em;
-  }
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: radial-gradient(
+    circle,
+    rgba(60, 173, 189, 1) 0%,
+    rgba(5, 50, 69, 1) 62%,
+    rgba(3, 4, 6, 1) 97%
+  );
+}
 
-  .project-title:hover{
-    color: #ff7f50;
-  }
-  
-  .projec-title, a {
-    text-decoration: none;
-  }
+.projects-section-header {
+  color: white;
+}
 
-  .technologies {
-    color: #e9ba38;
-    font-size: 80%;
-  }
+.projects-section-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  /* pie de pagina */
-  
-  footer {
-    background-color:#18191a;
-    padding: 1.5em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
+.project {
+  border-radius: 2px;
+  width: 450px;
+  margin: 1em;
+}
 
-  #footer-enlaces {
-    margin: 1.5em 0em 1.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+.project-image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -5px;
+}
 
-  footer img {
-    width: 4em;
-  }
+.project-title {
+  padding: 2rem 0.5rem;
+  background-color: #203347;
+  color: lightgrey;
+  margin-bottom: 0.8em;
+}
+
+.project-title:hover {
+  color: #ff7f50;
+}
+
+.projec-title,
+a {
+  text-decoration: none;
+}
+
+.technologies-container {
+  width: 50%;
+  margin: auto;
+  background: #00000080;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.technologies {
+  font-size: 90%;
+  color: #e9ba38;
+}
+
+/* pie de pagina */
+
+footer {
+  background-color: #18191a;
+  padding: 1.5em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#footer-enlaces {
+  margin: 1.5em 0em 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer img {
+  width: 4em;
+}
 
 @media (max-width: 1250px) {
   #about-me {
@@ -228,14 +242,14 @@ ul {
     text-align: center;
   }
 }
-  
+
 @media (max-width: 850px) {
   html {
     font-size: 80%;
   }
 
   #bloque-presentacion {
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
 
@@ -261,5 +275,4 @@ ul {
   #navbar li {
     margin: 0em 1em 0em 1em;
   }
-
 }
