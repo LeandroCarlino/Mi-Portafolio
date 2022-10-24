@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- Navegación -->
-    <nav id="navbar">
+    <nav class="navbar">
       <ul>
         <li class="zoom"><a href="#presentacion">Inicio</a></li>
         <li class="zoom"><a href="#projects">Proyectos</a></li>
@@ -28,12 +28,14 @@
     </nav>
 
     <!-- Principal -->
-    <header id="presentacion">
-      <section id="bloque-presentacion">
-        <img src="img/photo.png" alt="cara" id="profile" />
-        <section id="texto-presentacion">
+    <header class="presentacion">
+      <section class="bloque-presentacion">
+        <img src="img/photo.png" alt="cara" class="profile" />
+        <section class="texto-presentacion">
           <h1>¡Hola! Soy Leandro Carlino</h1>
-          <p class="p-tittle">Un estudiante de desarrollo web de Argentina.</p>
+          <p class="p-tittle">
+            Un desarrollador web y estudiante de programación de Argentina.
+          </p>
           <p class="p-tittle">
             Estoy cursando la carrera de programación universitaria, estudio
             ingles, y tengo experiencia laboral como Angular Frontend Developer.
@@ -47,16 +49,16 @@
 
     <!-- Un poco sobre mi -->
 
-    <section id="about-me">
-      <section id="about-tittle">
+    <section class="about-me">
+      <section class="about-tittle">
         <h2>Un poco sobre mi...</h2>
         <img
           src="img/about-me.png"
           alt="icono de profile"
-          id="icono-about-me"
+          class="icono-about-me"
         />
       </section>
-      <section id="about-p">
+      <section class="about-p">
         <p>
           Nací en Capital Federal, pero vivo en San Miguel de Tucumán, tengo 24
           años y estudio la carrera de programador universitario.
@@ -79,16 +81,77 @@
       </section>
     </section>
 
-    <section id="iconos-about-me">
+    <section class="iconos-about-me">
       <h2>Habilidades tecnicas:</h2>
-      <img src="img/icono-html.png" alt="Icono de HTML" class="zoom" />
-      <img src="img/icono-css.png" alt="Icono de CSS" class="zoom" />
-      <img src="img/icono-bs.png" alt="Icono de Boostrap" class="zoom" />
-      <img src="img/icono-jss.png" alt="Icono de Javascript" class="zoom" />
-      <img src="img/icono-wp.png" alt="Icono de Wordpress" class="zoom" />
-      <img src="img/icono-angular.png" alt="Icono de Angular" class="zoom" />
-      <img src="img/icono-git.png" alt="Icono de GitHub" class="zoom" />
+      <img
+        src="img/icono-html.png"
+        alt="Icono de HTML"
+        class="zoom"
+        title="HTML"
+      />
+      <img
+        src="img/icono-css.png"
+        alt="Icono de CSS"
+        class="zoom"
+        title="CSS"
+      />
+      <img
+        src="img/icono-bs.png"
+        alt="Icono de Bootstrap"
+        class="zoom"
+        title="Bootstrap"
+      />
+      <img
+        src="img/icono-jss.png"
+        alt="Icono de Javascript"
+        class="zoom"
+        title="Javascript"
+      />
+      <img
+        src="img/icono-wp.png"
+        alt="Icono de Wordpress"
+        class="zoom"
+        title="Wordpress"
+      />
+      <img
+        src="img/icono-angular.png"
+        alt="Icono de Angular"
+        class="zoom"
+        title="Angular"
+      />
+      <img
+        src="img/icono-git.png"
+        alt="Icono de GitHub"
+        class="zoom"
+        title="Github"
+      />
     </section>
+
+    <section class="cv-about-me">
+      <h2>Curriculum Vitae</h2>
+      <button type="button" onclick="openPDF()" id="open-button" class="button">
+        Mostrar PDF
+      </button>
+      <button
+        type="button"
+        onclick="closePDF()"
+        id="close-button"
+        class="button"
+      >
+        Cerrar PDF
+      </button>
+      <div id="pdf-container">
+        <iframe
+          src="https://drive.google.com/file/d/1MJkvXrUaAICyRSx2yaG9Qw5GaUi2aiiu/preview"
+          width="530"
+          height="751"
+          allow="autoplay"
+          class="pdf"
+          title="pdf"
+        ></iframe>
+      </div>
+    </section>
+
     <!-- Proyectos -->
     <section class="projects-section">
       <h2 class="projects-section-header">Algunos de mis proyectos</h2>
@@ -169,12 +232,12 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contacto">
+    <footer class="contacto">
       <p>
         ¡Vamos a trabajar juntos! Las siguientes imagenes te llevaran a mi gmail
         o a mi LinkedIn respectivamente
       </p>
-      <section id="footer-enlaces">
+      <section class="footer-enlaces">
         <a href="mailto:leandro.ca.98@gmail.com"
           ><img src="img/icono-gmail.png" alt="Icono de gmail" class="zoom"
         /></a>
@@ -193,7 +256,6 @@
         día/noche.
       </p>
     </footer>
-    <!-- <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js”></script> -->
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

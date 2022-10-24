@@ -30,7 +30,7 @@ a {
 
 /* Navegacion */
 
-#navbar {
+.navbar {
   display: flex;
   justify-content: flex-end;
   position: fixed;
@@ -40,11 +40,11 @@ a {
   color: white;
 }
 
-#navbar li {
+.navbar li {
   margin-right: 4em;
 }
 
-#navbar a {
+.navbar a {
   text-decoration: none;
   color: white;
 }
@@ -56,7 +56,7 @@ ul {
 
 /* Presentacion */
 
-#presentacion {
+.presentacion {
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,22 +67,22 @@ ul {
   justify-content: center;
 }
 
-#texto-presentacion p {
+.texto-presentacion p {
   margin-bottom: 0.2em;
 }
 
-#bloque-presentacion {
+.bloque-presentacion {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
 
-#texto-presentacion {
+.texto-presentacion {
   margin-left: 2.5em;
 }
 
-#profile {
+.profile {
   border: #b8a597 10px double;
   border-radius: 50%;
   width: 12em;
@@ -102,7 +102,7 @@ ul {
 
 /* Sobre mi */
 
-#about-me {
+.about-me {
   padding-top: 5em;
   display: flex;
   flex-direction: row;
@@ -111,47 +111,77 @@ ul {
   padding-bottom: 3em;
 }
 
-#about-tittle {
+.about-tittle {
   margin-left: 6em;
   margin-right: 6em;
 }
 
-#about-tittle h2 {
+.about-tittle h2 {
   margin-bottom: 1em;
 }
 
-#about-p {
+.about-p {
   padding: 3em;
   background-color: #a8c9d0;
   border-radius: 25% 10%;
   max-width: 35em;
 }
 
-#about-p p {
+.about-p p {
   margin: 0.5em;
 }
 
-#icono-about-me {
+.icono-about-me {
   width: 10em;
 }
 
-#about-me p {
+.about-me p {
   text-align: center;
 }
 
-#iconos-about-me {
+.iconos-about-me {
   background-color: #f6f5f5;
   text-align: center;
   padding-bottom: 3em;
 }
 
-#iconos-about-me h2 {
+.iconos-about-me h2 {
   margin-bottom: 1em;
 }
 
-#iconos-about-me img {
+.iconos-about-me img {
   width: 4em;
   margin: 1em;
+}
+
+.cv-about-me {
+  background-color: #f6f5f5;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.cv-about-me h2 {
+  margin-bottom: 1em;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px;
+  background-color: #3a7289;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+#pdf-container {
+  display: none;
+}
+
+#close-button {
+  display: none;
 }
 
 /* Proyectos */
@@ -227,7 +257,7 @@ footer {
   text-align: center;
 }
 
-#footer-enlaces {
+.footer-enlaces {
   margin: 1.5em 0em 1.5em;
   display: flex;
   flex-direction: row;
@@ -239,48 +269,53 @@ footer img {
 }
 
 @media (max-width: 1250px) {
-  #about-me {
+  .about-me {
     margin: 0;
     padding: 1.2em;
     display: flex;
     flex-direction: column;
   }
 
-  #about-p {
+  .about-p {
     margin: auto;
   }
 
-  #about-tittle {
+  .about-tittle {
     text-align: center;
   }
 }
 
 @media (max-width: 850px) {
-  #bloque-presentacion {
-    display: flex;
-    flex-direction: column;
-  }
-
-  #texto-presentacion {
-    margin-left: 0;
-    padding: 0.5em;
-  }
-
-  #profile {
-    margin-bottom: 2em;
-  }
-
-  #about-p {
-    padding: 1.5em;
-  }
-
-  #navbar {
+  .navbar {
     width: 100vw;
     padding: 1.5em;
     justify-content: space-around;
   }
 
-  #navbar li {
+  .navbar li {
     margin: 0em 1em 0em 1em;
+  }
+
+  .bloque-presentacion {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto-presentacion {
+    margin-left: 0;
+    padding: 0.5em;
+  }
+
+  .profile {
+    margin-bottom: 2em;
+  }
+
+  .about-p {
+    padding: 1.5em;
+  }
+
+  .pdf {
+    width: 100%;
+    height: 540px;
   }
 }
