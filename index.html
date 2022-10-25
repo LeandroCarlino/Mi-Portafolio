@@ -50,106 +50,113 @@
     <!-- Un poco sobre mi -->
 
     <section class="about-me">
-      <section class="about-tittle">
-        <h2>Un poco sobre mi...</h2>
+      <section class="biography">
+        <section class="about-tittle">
+          <h2>Un poco sobre mi...</h2>
+          <img
+            src="img/about-me.png"
+            alt="icono de profile"
+            class="icono-about-me"
+          />
+        </section>
+        <section class="about-p">
+          <p>
+            Nací en Capital Federal, pero vivo en San Miguel de Tucumán, tengo
+            24 años y estudio la carrera de programador universitario.
+          </p>
+          <p>
+            Mis inicios con la programación fueron hace dos años, durante la
+            pandemia. Las complicaciones universitarias me hicieron investigar
+            acerca de este extenso mundo.
+          </p>
+          <p>
+            Comencé con un curso basico de Javascript impartido por un
+            programador argentino radicado en Australia, al siguiente año decidí
+            buscar por una carrera que tenga que ver con este mundo.
+          </p>
+          <p>
+            Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
+            guias. Despues de muchas mucho tiempo en esto, puedo decir
+            perfectamente que se convirtio en mi pasión, y lo que deseo hacer.
+          </p>
+        </section>
+      </section>
+
+      <section class="iconos-about-me">
+        <h2>Habilidades tecnicas:</h2>
         <img
-          src="img/about-me.png"
-          alt="icono de profile"
-          class="icono-about-me"
+          src="img/icono-html.png"
+          alt="Icono de HTML"
+          class="zoom"
+          title="HTML"
+        />
+        <img
+          src="img/icono-css.png"
+          alt="Icono de CSS"
+          class="zoom"
+          title="CSS"
+        />
+        <img
+          src="img/icono-bs.png"
+          alt="Icono de Bootstrap"
+          class="zoom"
+          title="Bootstrap"
+        />
+        <img
+          src="img/icono-jss.png"
+          alt="Icono de Javascript"
+          class="zoom"
+          title="Javascript"
+        />
+        <img
+          src="img/icono-wp.png"
+          alt="Icono de Wordpress"
+          class="zoom"
+          title="Wordpress"
+        />
+        <img
+          src="img/icono-angular.png"
+          alt="Icono de Angular"
+          class="zoom"
+          title="Angular"
+        />
+        <img
+          src="img/icono-git.png"
+          alt="Icono de GitHub"
+          class="zoom"
+          title="Github"
         />
       </section>
-      <section class="about-p">
-        <p>
-          Nací en Capital Federal, pero vivo en San Miguel de Tucumán, tengo 24
-          años y estudio la carrera de programador universitario.
-        </p>
-        <p>
-          Mis inicios con la programación fueron hace dos años, durante la
-          pandemia. Las complicaciones universitarias me hicieron investigar
-          acerca de este extenso mundo.
-        </p>
-        <p>
-          Comencé con un curso basico de Javascript impartido por un programador
-          argentino radicado en Australia, al siguiente año decidí buscar por
-          una carrera que tenga que ver con este mundo.
-        </p>
-        <p>
-          Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
-          guias. Despues de muchas mucho tiempo en esto, puedo decir
-          perfectamente que se convirtio en mi pasión, y lo que deseo hacer.
-        </p>
+
+      <section class="cv-about-me">
+        <h2>Curriculum Vitae</h2>
+        <button
+          type="button"
+          onclick="openPDF()"
+          id="open-button"
+          class="button"
+        >
+          Mostrar PDF
+        </button>
+        <button
+          type="button"
+          onclick="closePDF()"
+          id="close-button"
+          class="button"
+        >
+          Cerrar PDF
+        </button>
+        <div id="pdf-container">
+          <iframe
+            src="https://drive.google.com/file/d/1MJkvXrUaAICyRSx2yaG9Qw5GaUi2aiiu/preview"
+            width="530"
+            height="751"
+            allow="autoplay"
+            class="pdf"
+            title="pdf"
+          ></iframe>
+        </div>
       </section>
-    </section>
-
-    <section class="iconos-about-me">
-      <h2>Habilidades tecnicas:</h2>
-      <img
-        src="img/icono-html.png"
-        alt="Icono de HTML"
-        class="zoom"
-        title="HTML"
-      />
-      <img
-        src="img/icono-css.png"
-        alt="Icono de CSS"
-        class="zoom"
-        title="CSS"
-      />
-      <img
-        src="img/icono-bs.png"
-        alt="Icono de Bootstrap"
-        class="zoom"
-        title="Bootstrap"
-      />
-      <img
-        src="img/icono-jss.png"
-        alt="Icono de Javascript"
-        class="zoom"
-        title="Javascript"
-      />
-      <img
-        src="img/icono-wp.png"
-        alt="Icono de Wordpress"
-        class="zoom"
-        title="Wordpress"
-      />
-      <img
-        src="img/icono-angular.png"
-        alt="Icono de Angular"
-        class="zoom"
-        title="Angular"
-      />
-      <img
-        src="img/icono-git.png"
-        alt="Icono de GitHub"
-        class="zoom"
-        title="Github"
-      />
-    </section>
-
-    <section class="cv-about-me">
-      <h2>Curriculum Vitae</h2>
-      <button type="button" onclick="openPDF()" id="open-button" class="button">
-        Mostrar PDF
-      </button>
-      <button
-        type="button"
-        onclick="closePDF()"
-        id="close-button"
-        class="button"
-      >
-        Cerrar PDF
-      </button>
-      <div id="pdf-container">
-        <iframe
-          src="https://drive.google.com/file/d/1MJkvXrUaAICyRSx2yaG9Qw5GaUi2aiiu/preview"
-          width="530"
-          height="751"
-          allow="autoplay"
-          class="pdf"
-          title="pdf"
-        ></iframe>
-      </div>
     </section>
 
     <!-- Proyectos -->
