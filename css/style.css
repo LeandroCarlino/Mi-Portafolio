@@ -9,23 +9,24 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: black;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 20px;
   color: whitesmoke;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
 p,
 a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Navegacion */
@@ -59,7 +60,7 @@ ul {
 /* Presentacion */
 
 .presentacion {
-  background-image: url("../img/wallpaper2.png");
+  background-image: url("../img/wallpaper4.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -86,7 +87,7 @@ ul {
 }
 
 .texto-presentacion {
-  background-color: #0000008f;
+  background-color: #000000bd;
   border-radius: 20px;
   padding: 1em;
   margin-left: 2.5em;
@@ -125,11 +126,11 @@ ul {
 /* Sobre mi */
 
 .about-me {
-  background-image: linear-gradient(62deg, #232527 0%, #0f0e0f 100%);
+  background-image: linear-gradient(62deg, #000000 0%, #0f0d17 100%);
   color: whitesmoke;
   min-height: 100vh;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,25 +152,26 @@ ul {
 
 .about-tittle h2 {
   background-color: #0000005d;
-  border-radius: 20px;
-  padding: 12px;
+  border-radius: 8px;
+  padding: 10px;
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .about-p {
-  padding: 3em;
-  background-color: black;
-  border-radius: 25% 10%;
+  padding: 1.5em;
+  border-radius: 20px;
   max-width: 560px;
-  border: 2px solid #474848;
+  border: 1px solid #5ddef1;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
 .about-p p {
-  margin: 0.5em;
+  margin-bottom: 10px;
 }
 
 .icono-about-me {
+  filter: drop-shadow(2px 6px 8px black);
   width: 10em;
 }
 
@@ -217,6 +219,57 @@ ul {
   cursor: pointer;
 }
 
+.btn1 {
+  box-shadow: inset 0 0 0 2px #5ddef1;
+  color: #5ddef1;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 5px;
+  padding: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2em;
+}
+.btn1::before,
+.btn1::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.btn1::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+.btn1::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+.btn1:hover {
+  color: white;
+}
+.btn1:hover::before,
+.btn1:hover::after {
+  border-color: white;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.btn1:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.btn1:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
 #pdf-container {
   display: none;
 }
@@ -229,16 +282,19 @@ ul {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
-  background: radial-gradient(
-    circle,
-    rgba(60, 173, 189, 1) 0%,
-    rgba(5, 50, 69, 1) 62%,
-    rgba(3, 4, 6, 1) 97%
-  );
+  padding: 8rem 2rem;
+  background: url("../img/wallpaper5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .projects-section-header {
+  margin-bottom: 1em;
+  background-color: #000000bd;
+  width: 300px;
+  padding: 0.8em;
+  border-radius: 10px;
+  margin: auto;
   color: whitesmoke;
 }
 
@@ -264,14 +320,16 @@ ul {
 
 .project-title {
   padding: 2rem 0.5rem;
-  background-color: #203347;
+  background-color: #000000;
   color: lightgrey;
   margin-bottom: 0.8em;
   border-radius: 0 0 20px 20px;
 }
 
-.project-title:hover {
-  color: #ff7f50;
+.project-title:hover,
+.project:hover .project-title {
+  background-color: #151515;
+  color: #1fbed5;
 }
 
 .projec-title,
@@ -294,7 +352,7 @@ a {
 /* pie de pagina */
 
 footer {
-  background-color: #18191a;
+  background-image: linear-gradient(62deg, #000000 0%, #0f0d17 100%);
   padding: 1.5em;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -304,11 +362,12 @@ footer {
   margin: 1.5em 0em 1.5em;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 footer img {
   width: 4em;
+  margin: 1em;
 }
 
 @media (max-width: 1250px) {
@@ -334,13 +393,6 @@ footer img {
 }
 
 @media (max-width: 850px) {
-  h1,
-  h2,
-  p,
-  a {
-    font-size: 115%;
-  }
-
   .navbar {
     width: 100vw;
     padding: 1.5em;
@@ -355,6 +407,7 @@ footer img {
     display: flex;
     flex-direction: column;
     height: 90vh;
+    padding: 2em;
   }
 
   .texto-presentacion {
@@ -362,17 +415,25 @@ footer img {
     padding: 0.5em;
   }
 
+  .projects-section-header {
+    width: 260px;
+  }
+
   .profile {
     margin-bottom: 2em;
   }
 
   .about-p {
-    padding: 1.5em;
+    padding: 1em;
   }
 
   .pdf {
     width: 100%;
     height: 540px;
+  }
+
+  .technologies-container {
+    width: 80%;
   }
 }
 
