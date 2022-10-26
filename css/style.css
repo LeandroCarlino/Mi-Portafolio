@@ -36,7 +36,7 @@ a {
   position: fixed;
   width: 100%;
   padding: 1em;
-  color: white;
+  color: whitesmoke;
   background-color: #00000080;
   z-index: 1;
 }
@@ -47,12 +47,13 @@ a {
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 ul {
   display: flex;
   list-style: none;
+  animation: neon 14s infinite;
 }
 
 /* Presentacion */
@@ -73,7 +74,7 @@ ul {
 }
 
 .bloque-presentacion {
-  height: 90vh;
+  height: 88vh;
   width: 100vw;
   padding: 4em;
   backdrop-filter: blur(4px);
@@ -97,6 +98,10 @@ ul {
   width: 12em;
 }
 
+.p-tittle {
+  color: #1fbed5;
+}
+
 .zoom {
   transition: transform 0.2s;
 }
@@ -105,20 +110,29 @@ ul {
   transform: scale(1.2);
 }
 
-.p-tittle {
-  color: #3cadbd;
+.zoom2 {
+  transition: transform 0.2s;
+}
+
+.zoom2:hover {
+  transform: scale(1.02);
+}
+
+.blue {
+  color: #1fbed5;
 }
 
 /* Sobre mi */
 
 .about-me {
+  background-image: linear-gradient(62deg, #232527 0%, #0f0e0f 100%);
   color: whitesmoke;
-  padding-top: 5em;
+  min-height: 100vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(62deg, #232527 0%, #0f0e0f 100%);
-  padding-bottom: 3em;
 }
 
 .biography {
@@ -126,23 +140,29 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 6em;
 }
 
 .about-tittle {
   margin-left: 6em;
   margin-right: 6em;
+  padding-top: 1em;
 }
 
 .about-tittle h2 {
+  background-color: #0000005d;
+  border-radius: 20px;
+  padding: 12px;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
 .about-p {
   padding: 3em;
-  background-color: #a8c9d0;
+  background-color: black;
   border-radius: 25% 10%;
-  max-width: 35em;
+  max-width: 560px;
+  border: 2px solid #474848;
 }
 
 .about-p p {
@@ -159,7 +179,7 @@ ul {
 
 .iconos-about-me {
   text-align: center;
-  padding-bottom: 3em;
+  margin-bottom: 6em;
 }
 
 .iconos-about-me h2 {
@@ -167,13 +187,18 @@ ul {
 }
 
 .iconos-about-me img {
+  cursor: pointer;
   width: 4em;
   margin: 1em;
+  filter: blur(1px);
+}
+
+.iconos-about-me img:hover {
+  filter: none;
 }
 
 .cv-about-me {
   text-align: center;
-  padding-bottom: 2em;
 }
 
 .cv-about-me h2 {
@@ -185,7 +210,7 @@ ul {
   padding: 8px;
   background-color: #3a7289;
   border-radius: 12px;
-  color: white;
+  color: whitesmoke;
   border: none;
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   margin-bottom: 2em;
@@ -214,7 +239,7 @@ ul {
 }
 
 .projects-section-header {
-  color: white;
+  color: whitesmoke;
 }
 
 .projects-section-body {
@@ -234,6 +259,7 @@ ul {
   width: 100%;
   object-fit: cover;
   margin-bottom: -5px;
+  border-radius: 20px 20px 0 0;
 }
 
 .project-title {
@@ -241,6 +267,7 @@ ul {
   background-color: #203347;
   color: lightgrey;
   margin-bottom: 0.8em;
+  border-radius: 0 0 20px 20px;
 }
 
 .project-title:hover {
@@ -302,10 +329,18 @@ footer img {
 
   .about-tittle {
     text-align: center;
+    margin: auto;
   }
 }
 
 @media (max-width: 850px) {
+  h1,
+  h2,
+  p,
+  a {
+    font-size: 115%;
+  }
+
   .navbar {
     width: 100vw;
     padding: 1.5em;
@@ -319,6 +354,7 @@ footer img {
   .bloque-presentacion {
     display: flex;
     flex-direction: column;
+    height: 90vh;
   }
 
   .texto-presentacion {
@@ -337,5 +373,21 @@ footer img {
   .pdf {
     width: 100%;
     height: 540px;
+  }
+}
+
+/*Keyframes*/
+
+@keyframes neon {
+  0%,
+  35%,
+  45%,
+  65%,
+  100% {
+    text-shadow: whitesmoke 0 1px 8px, #2bc7db 0 1px 18px, #2bc7db 0 1px 24px;
+  }
+  40%,
+  60% {
+    text-shadow: none;
   }
 }
