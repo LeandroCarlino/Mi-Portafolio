@@ -254,15 +254,18 @@ a {
 }
 
 .technologies-container {
-  width: 50%;
+  width: 60%;
   margin: auto;
-  background: #00000080;
-  border-radius: 25px;
-  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .technologies {
   color: #e9ba38;
+  background: #00000080;
+  border-radius: 25px;
+  padding: 8px;
 }
 
 /* pie de pagina */
@@ -349,7 +352,7 @@ a {
   }
 
   .technologies-container {
-    width: 80%;
+    width: 94%;
   }
 }
 
