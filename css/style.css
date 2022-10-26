@@ -57,9 +57,9 @@ ul {
   animation: neon 14s infinite;
 }
 
-/* Presentacion */
+/* introduction */
 
-.presentacion {
+.introduction {
   background-image: url("../img/wallpaper4.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,11 +70,11 @@ ul {
   justify-content: center;
 }
 
-.texto-presentacion p {
+.introduction-text p {
   margin-bottom: 0.2em;
 }
 
-.bloque-presentacion {
+.introduction-container {
   height: 88vh;
   width: 100vw;
   padding: 4em;
@@ -86,7 +86,7 @@ ul {
   flex-direction: row;
 }
 
-.texto-presentacion {
+.introduction-text {
   background-color: #000000bd;
   border-radius: 20px;
   padding: 1em;
@@ -100,26 +100,6 @@ ul {
 }
 
 .p-tittle {
-  color: #1fbed5;
-}
-
-.zoom {
-  transition: transform 0.2s;
-}
-
-.zoom:hover {
-  transform: scale(1.2);
-}
-
-.zoom2 {
-  transition: transform 0.2s;
-}
-
-.zoom2:hover {
-  transform: scale(1.02);
-}
-
-.blue {
   color: #1fbed5;
 }
 
@@ -144,13 +124,13 @@ ul {
   margin-bottom: 6em;
 }
 
-.about-tittle {
+.about-me-tittle {
   margin-left: 6em;
   margin-right: 6em;
   padding-top: 1em;
 }
 
-.about-tittle h2 {
+.about-me-tittle h2 {
   background-color: #0000005d;
   border-radius: 8px;
   padding: 10px;
@@ -158,7 +138,7 @@ ul {
   margin-bottom: 1em;
 }
 
-.about-p {
+.about-me-text {
   padding: 1.5em;
   border-radius: 20px;
   max-width: 560px;
@@ -166,11 +146,11 @@ ul {
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
-.about-p p {
+.about-me-text p {
   margin-bottom: 10px;
 }
 
-.icono-about-me {
+.about-me-icon {
   filter: drop-shadow(2px 6px 8px black);
   width: 10em;
 }
@@ -179,95 +159,31 @@ ul {
   text-align: center;
 }
 
-.iconos-about-me {
+.about-me-technologies {
   text-align: center;
   margin-bottom: 6em;
 }
 
-.iconos-about-me h2 {
+.about-me-technologies h2 {
   margin-bottom: 1em;
 }
 
-.iconos-about-me img {
+.about-me-technologies img {
   cursor: pointer;
   width: 4em;
   margin: 1em;
+}
+
+.about-me-technologies img:hover {
   filter: blur(1px);
 }
 
-.iconos-about-me img:hover {
-  filter: none;
-}
-
-.cv-about-me {
+.about-me-cv {
   text-align: center;
 }
 
-.cv-about-me h2 {
+.about-me-cv h2 {
   margin-bottom: 1em;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px;
-  background-color: #3a7289;
-  border-radius: 12px;
-  color: whitesmoke;
-  border: none;
-  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-  margin-bottom: 2em;
-  cursor: pointer;
-}
-
-.btn1 {
-  box-shadow: inset 0 0 0 2px #5ddef1;
-  color: #5ddef1;
-  transition: color 0.25s 0.0833333333s;
-  position: relative;
-  background: none;
-  border: none;
-  cursor: pointer;
-  letter-spacing: 5px;
-  padding: 1em;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 2em;
-}
-.btn1::before,
-.btn1::after {
-  border: 0 solid transparent;
-  box-sizing: border-box;
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  right: 0;
-}
-.btn1::before {
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-}
-.btn1::after {
-  border-top-width: 2px;
-  border-right-width: 2px;
-}
-.btn1:hover {
-  color: white;
-}
-.btn1:hover::before,
-.btn1:hover::after {
-  border-color: white;
-  transition: border-color 0s, width 0.25s, height 0.25s;
-  width: 100%;
-  height: 100%;
-}
-.btn1:hover::before {
-  transition-delay: 0s, 0s, 0.25s;
-}
-.btn1:hover::after {
-  transition-delay: 0s, 0.25s, 0s;
 }
 
 #pdf-container {
@@ -280,7 +196,7 @@ ul {
 
 /* Proyectos */
 
-.projects-section {
+.projects-container {
   text-align: center;
   padding: 8rem 2rem;
   background: url("../img/wallpaper5.png");
@@ -288,17 +204,17 @@ ul {
   background-size: cover;
 }
 
-.projects-section-header {
-  margin-bottom: 1em;
+.projects-header {
   background-color: #000000bd;
   width: 300px;
   padding: 0.8em;
   border-radius: 10px;
   margin: auto;
+  margin-bottom: 1em;
   color: whitesmoke;
 }
 
-.projects-section-body {
+.projects-body {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -351,21 +267,21 @@ a {
 
 /* pie de pagina */
 
-footer {
+.contact {
   background-image: linear-gradient(62deg, #000000 0%, #0f0d17 100%);
   padding: 1.5em;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.footer-enlaces {
+.footer-url {
   margin: 1.5em 0em 1.5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-footer img {
+.contact img {
   width: 4em;
   margin: 1em;
 }
@@ -382,11 +298,11 @@ footer img {
     flex-direction: column;
   }
 
-  .about-p {
+  .about-me-text {
     margin: auto;
   }
 
-  .about-tittle {
+  .about-me-tittle {
     text-align: center;
     margin: auto;
   }
@@ -403,19 +319,19 @@ footer img {
     margin: 0em 1em 0em 1em;
   }
 
-  .bloque-presentacion {
+  .introduction-container {
     display: flex;
     flex-direction: column;
     height: 90vh;
     padding: 2em;
   }
 
-  .texto-presentacion {
+  .introduction-text {
     margin-left: 0;
     padding: 0.5em;
   }
 
-  .projects-section-header {
+  .projects-header {
     width: 260px;
   }
 
@@ -423,7 +339,7 @@ footer img {
     margin-bottom: 2em;
   }
 
-  .about-p {
+  .about-me-text {
     padding: 1em;
   }
 
@@ -435,6 +351,81 @@ footer img {
   .technologies-container {
     width: 80%;
   }
+}
+
+/* Button */
+
+.btn {
+  box-shadow: inset 0 0 0 2px #5ddef1;
+  color: #5ddef1;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 5px;
+  padding: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2em;
+}
+.btn::before,
+.btn::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.btn::before {
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+.btn::after {
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+.btn:hover {
+  color: white;
+}
+.btn:hover::before,
+.btn:hover::after {
+  border-color: white;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.btn:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.btn:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+
+/* Others */
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.zoom2 {
+  transition: transform 0.2s;
+}
+
+.zoom2:hover {
+  transform: scale(1.02);
+}
+
+.blue {
+  color: #1fbed5;
 }
 
 /*Keyframes*/

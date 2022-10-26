@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="description"
-      content="Pagina de portafolio acerca de Leandro Carlino"
+      content="Portafolio de Leandro Carlino - CV - Proyectos"
     />
     <meta name="author" content="Leandro Matías Carlino Aráoz" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,17 +29,17 @@
     <!-- Navegación -->
     <nav class="navbar">
       <ul>
-        <li class="zoom"><a href="#presentacion">Inicio</a></li>
+        <li class="zoom"><a href="#introduction">Inicio</a></li>
         <li class="zoom"><a href="#projects">Proyectos</a></li>
-        <li class="zoom"><a href="#contacto">Contacto</a></li>
+        <li class="zoom"><a href="#contact">contact</a></li>
       </ul>
     </nav>
 
     <!-- Principal -->
-    <header id="presentacion" class="presentacion">
-      <section class="bloque-presentacion">
-        <img src="img/photo.png" alt="cara" class="profile" />
-        <section class="texto-presentacion">
+    <header id="introduction" class="introduction">
+      <section class="introduction-container">
+        <img src="img/photo.png" alt="Leandro Carlino" class="profile" />
+        <section class="introduction-text">
           <h1>¡Hola! Soy Leandro Carlino</h1>
           <p class="p-tittle">
             Un desarrollador web y estudiante de programación de Argentina.
@@ -59,15 +59,15 @@
 
     <section class="about-me">
       <section class="biography">
-        <section class="about-tittle">
+        <section class="about-me-tittle">
           <img
             src="img/about-me-6.png"
-            alt="icono de profile"
-            class="icono-about-me"
+            alt="Profile icon"
+            class="about-me-icon"
           />
           <h2>Sobre mi...</h2>
         </section>
-        <section class="about-p">
+        <section class="about-me-text">
           <p>
             Nací en Capital Federal, pero vivo en
             <span class="blue">San Miguel de Tucumán</span>, tengo 24 años y
@@ -98,7 +98,7 @@
         </section>
       </section>
 
-      <section class="iconos-about-me">
+      <section class="about-me-technologies">
         <h2>Habilidades tecnicas:</h2>
         <img
           src="img/icono-html.png"
@@ -144,16 +144,16 @@
         />
       </section>
 
-      <section class="cv-about-me">
+      <section class="about-me-cv">
         <h2>Curriculum Vitae</h2>
-        <button type="button" onclick="openPDF()" id="open-button" class="btn1">
+        <button type="button" onclick="openPDF()" id="open-button" class="btn">
           Mostrar PDF
         </button>
         <button
           type="button"
           onclick="closePDF()"
           id="close-button"
-          class="btn1"
+          class="btn"
         >
           Cerrar PDF
         </button>
@@ -171,9 +171,9 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="projects-section" id="projects">
-      <h2 class="projects-section-header">Algunos de mis proyectos</h2>
-      <div class="projects-section-body">
+    <section class="projects-container" id="projects">
+      <h2 class="projects-header">Algunos de mis proyectos</h2>
+      <div class="projects-body">
         <div class="project zoom2">
           <a href="https://post-and-view.vercel.app/home" target="_blank">
             <img
@@ -250,12 +250,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="contacto" id="contacto">
+    <footer class="contact" id="contact">
       <p>
         ¡Vamos a trabajar juntos! Las siguientes imagenes te llevaran a mi gmail
         o a mi LinkedIn respectivamente
       </p>
-      <section class="footer-enlaces">
+      <section class="footer-url">
         <a href="mailto:leandro.ca.98@gmail.com"
           ><img src="img/icono-gmail.png" alt="Icono de gmail" class="zoom"
         /></a>
