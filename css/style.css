@@ -254,11 +254,12 @@ a {
 }
 
 .technologies-container {
-  width: 60%;
+  width: 65%;
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .technologies {
@@ -266,6 +267,7 @@ a {
   background: #00000080;
   border-radius: 25px;
   padding: 8px;
+  margin: 2px;
 }
 
 /* pie de pagina */
