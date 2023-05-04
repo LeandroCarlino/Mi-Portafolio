@@ -1,296 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="Portafolio de Leandro Carlino - CV - Proyectos"
-    />
-    <meta name="author" content="Leandro Matías Carlino Aráoz" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Portafolio - Leandro Carlino</title>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
-      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Portafolio de Leandro Carlino - CV - Proyectos" />
+  <meta name="author" content="Leandro Matías Carlino Aráoz" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Portafolio - Leandro Carlino</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navegación -->
-    <nav class="navbar">
-      <ul>
-        <li class="zoom"><a href="#introduction">Inicio</a></li>
-        <li class="zoom"><a href="#projects">Proyectos</a></li>
-        <li class="zoom"><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 
-    <!-- Principal -->
-    <header id="introduction" class="introduction">
-      <section class="introduction-container">
-        <img src="img/photo.png" alt="Leandro Carlino" class="profile" />
-        <section class="introduction-text">
-          <h1>¡Hola! Soy Leandro Carlino</h1>
-          <p class="p-tittle">
-            Un desarrollador web y estudiante de programación de Argentina.
-          </p>
-          <p class="p-tittle">
-            Estoy cursando la carrera de programación universitaria, estudio
-            ingles, y tengo experiencia laboral como Angular Frontend Developer.
-          </p>
-          <p class="p-tittle">
-            Estoy buscando desarrollarme de forma activa, te invito a conocerme!
-          </p>
-        </section>
+  <!-- Fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav class="container-navbar">
+    <ul>
+      <li class="zoom"><a href="#introduction">Inicio</a></li>
+      <li class="zoom"><a href="#projects">Proyectos</a></li>
+      <li class="zoom"><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Principal -->
+  <header id="introduction" class="introduction">
+    <section class="introduction-container">
+      <img src="img/photo.png" alt="Leandro Carlino" class="profile" />
+      <section class="introduction-text">
+        <h1>¡Hola! Soy Leandro Carlino</h1>
+        <p class="p-tittle">
+          Un desarrollador web y estudiante de programación de Argentina.
+        </p>
+        <p class="p-tittle">
+          Estoy cursando la carrera de programación universitaria, estudio
+          ingles, y tengo experiencia laboral como Angular Frontend Developer.
+        </p>
+        <p class="p-tittle">
+          Estoy buscando desarrollarme de forma activa, te invito a conocerme!
+        </p>
       </section>
-    </header>
+    </section>
+  </header>
 
-    <!-- Un poco sobre mi -->
+  <!-- Un poco sobre mi -->
 
-    <section class="about-me">
-      <section class="biography">
-        <section class="about-me-tittle">
-          <img
-            src="img/about-me-6.png"
-            alt="Profile icon"
-            class="about-me-icon"
-          />
-          <h2>Sobre mi...</h2>
-        </section>
-        <section class="about-me-text">
-          <p>
-            Nací en Capital Federal, pero vivo en
-            <span class="blue">San Miguel de Tucumán</span>, tengo 24 años y
-            estudio la carrera de
-            <span class="blue">programador universitario</span>.
-          </p>
-          <p>
-            Mis inicios con la programación fueron hace
-            <span class="blue">dos años</span>. El paron universitario me hizo
-            investigar acerca de este extenso mundo.
-          </p>
-          <p>
-            Comencé con un curso basico de
-            <span class="blue">Javascript</span> impartido por un programador
-            argentino radicado en Australia, al siguiente año decidí buscar por
-            una carrera que tenga que ver con este mundo.
-          </p>
-          <p>
-            Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
-            guias. Los días de facultad me nutrieron de confianza, y mi primer
-            trabajo me termino de forjar
-          </p>
-          <p>
-            Despues de muchas mucho tiempo en esto, puedo decir perfectamente
-            que se convirtio en mi <span class="blue">pasión</span>, y lo que
-            deseo hacer.
-          </p>
-        </section>
+  <section class="about-me">
+    <section class="biography">
+      <section class="about-me-tittle">
+        <img src="img/about-me.png" alt="Profile icon" class="about-me-icon" />
+        <h3>Sobre mi...</h3>
       </section>
-
-      <section class="about-me-technologies">
-        <h2>Habilidades tecnicas:</h2>
-        <img
-          src="img/icono-html.png"
-          alt="Icono de HTML"
-          class="zoom"
-          title="HTML"
-        />
-        <img
-          src="img/icono-css.png"
-          alt="Icono de CSS"
-          class="zoom"
-          title="CSS"
-        />
-        <img
-          src="img/icono-bs.png"
-          alt="Icono de Bootstrap"
-          class="zoom"
-          title="Bootstrap"
-        />
-        <img
-          src="img/icono-jss.png"
-          alt="Icono de Javascript"
-          class="zoom"
-          title="Javascript"
-        />
-        <img
-          src="img/icono-wp.png"
-          alt="Icono de Wordpress"
-          class="zoom"
-          title="Wordpress"
-        />
-        <img
-          src="img/icono-angular.png"
-          alt="Icono de Angular"
-          class="zoom"
-          title="Angular"
-        />
-        <img
-          src="img/icono-git.png"
-          alt="Icono de GitHub"
-          class="zoom"
-          title="Github"
-        />
-      </section>
-
-      <section class="about-me-cv">
-        <h2>Curriculum Vitae</h2>
-        <button type="button" onclick="openPDF()" id="open-button" class="btn">
-          Mostrar PDF
-        </button>
-        <button
-          type="button"
-          onclick="closePDF()"
-          id="close-button"
-          class="btn"
-        >
-          Cerrar PDF
-        </button>
-        <div id="pdf-container">
-          <iframe
-            src="https://drive.google.com/file/d/1MJkvXrUaAICyRSx2yaG9Qw5GaUi2aiiu/preview"
-            width="530"
-            height="751"
-            allow="autoplay"
-            class="pdf"
-            title="pdf"
-          ></iframe>
-        </div>
+      <section class="about-me-text">
+        <p>
+          Nací en Capital Federal, pero vivo en
+          <span class="blue">San Miguel de Tucumán</span>, tengo 24 años y
+          estudio la carrera de
+          <span class="blue">programador universitario</span>.
+        </p>
+        <p>
+          Mis inicios con la programación fueron en
+          <span class="blue">2020</span>. El paron universitario me hizo
+          investigar acerca de este extenso mundo.
+        </p>
+        <p>
+          Comencé con un curso basico de
+          <span class="blue">Javascript</span> impartido por un programador
+          argentino radicado en Australia, al siguiente año decidí buscar por
+          una carrera que tenga que ver con este mundo.
+        </p>
+        <p>
+          Seguí por mi cuenta, aprendiendo de diferentes fuentes, cursos y
+          guias. Los días de facultad me nutrieron de confianza, y mi primer
+          trabajo me termino de forjar
+        </p>
+        <p>
+          Despues de muchas mucho tiempo en esto, puedo decir perfectamente
+          que se convirtio en mi <span class="blue">pasión</span>, y lo que
+          deseo hacer.
+        </p>
       </section>
     </section>
 
-    <!-- Proyectos -->
-    <section class="projects-container" id="projects">
-      <h2 class="projects-header">Algunos de mis proyectos</h2>
-      <div class="projects-body">
-        <div class="project zoom2">
-          <a href="https://post-and-view.vercel.app/home" target="_blank">
-            <img
-              class="project-image"
-              src="img/angular-wallpaper.jpg"
-              alt="project"
-            />
-            <p class="project-title">Post and View</p>
-          </a>
-          <div class="technologies-container">
-            <p class="technologies">HTML</p>
-            <p class="technologies">CSS</p>
-            <p class="technologies">Bootstrap</p>
-            <p class="technologies">Angular</p>
-            <p class="technologies">Material</p>
-          </div>
-        </div>
-        <div class="project zoom2">
-          <a href="https://people-generator.vercel.app/" target="_blank">
-            <img
-              class="project-image"
-              src="img/angular-wallpaper.jpg"
-              alt="project"
-            />
-            <p class="project-title">Generador de personas</p>
-          </a>
-          <div class="technologies-container">
-            <p class="technologies">HTML</p>
-            <p class="technologies">SASS</p>
-            <p class="technologies">Angular</p>
-          </div>
-        </div>
-        <div class="project zoom2">
-          <a href="https://gifs-app-beryl.vercel.app" target="_blank">
-            <img
-              class="project-image"
-              src="img/angular-wallpaper.jpg"
-              alt="project"
-            />
-            <p class="project-title">Gifs App</p>
-          </a>
-          <div class="technologies-container">
-            <p class="technologies">HTML</p>
-            <p class="technologies">CSS</p>
-            <p class="technologies">Bootstrap</p>
-            <p class="technologies">Angular</p>
-          </div>
-        </div>
-        <div class="project zoom2">
-          <a href="https://paises-app-eight.vercel.app" target="_blank">
-            <img
-              class="project-image"
-              src="img/angular-wallpaper.jpg"
-              alt="project"
-            />
-            <p class="project-title">Paises App</p>
-          </a>
-          <div class="technologies-container">
-            <p class="technologies">HTML</p>
-            <p class="technologies">CSS</p>
-            <p class="technologies">Bootstrap</p>
-            <p class="technologies">Angular</p>
-          </div>
-        </div>
-        <div class="project zoom2">
-          <a href="https://chihiro-page.netlify.app/" target="_blank">
-            <img
-              class="project-image"
-              src="img/htmlCssJs-wallpaper.jpg"
-              alt="project"
-            />
-            <p class="project-title">El viaje de Chihiro</p>
-          </a>
-          <div class="technologies-container">
-            <p class="technologies">HTML</p>
-            <p class="technologies">CSS</p>
-            <p class="technologies">Javascript</p>
-          </div>
-        </div>
-        <div class="project">
-          <a href="#">
-            <img
-              class="project-image"
-              src="img/under-construction.jpg"
-              alt="project"
-            />
-            <p class="project-title">En construcción</p>
-          </a>
-        </div>
+    <section class="about-me-technologies">
+      <h3>Habilidades tecnicas:</h3>
+      <img src="img/icono-html.png" alt="Icono de HTML" class="zoom" title="HTML" />
+      <img src="img/icono-css.png" alt="Icono de CSS" class="zoom" title="CSS" />
+      <img src="img/icono-bs.png" alt="Icono de Bootstrap" class="zoom" title="Bootstrap" />
+      <img src="img/icono-jss.png" alt="Icono de Javascript" class="zoom" title="Javascript" />
+      <img src="img/icono-wp.png" alt="Icono de Wordpress" class="zoom" title="Wordpress" />
+      <img src="img/icono-angular.png" alt="Icono de Angular" class="zoom" title="Angular" />
+      <img src="img/icono-git.png" alt="Icono de GitHub" class="zoom" title="Github" />
+    </section>
+
+    <section class="about-me-cv">
+      <h3>Curriculum Vitae:</h3>
+      <button type="button" onclick="openPDF()" id="open-button" class="btn">
+        Mostrar PDF
+      </button>
+      <button type="button" onclick="closePDF()" id="close-button" class="btn">
+        Cerrar PDF
+      </button>
+      <div id="pdf-container">
+        <iframe src="https://drive.google.com/file/d/1MJkvXrUaAICyRSx2yaG9Qw5GaUi2aiiu/preview" width="530" height="751"
+          allow="autoplay" class="pdf" title="pdf"></iframe>
       </div>
     </section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="contact" id="contact">
-      <p>
-        ¡Vamos a trabajar juntos! Las siguientes imagenes te llevaran a mi gmail
-        o a mi LinkedIn respectivamente
-      </p>
-      <section class="footer-url">
-        <a href="mailto:leandro.ca.98@gmail.com"
-          ><img src="img/icono-gmail.png" alt="Icono de gmail" class="zoom"
-        /></a>
-        <a href="https://www.linkedin.com/in/leandro-carlino/" target="_blank"
-          ><img
-            src="img/icono-linkeding.png"
-            alt="Icono de Linkedin"
-            class="zoom"
-        /></a>
-        <a href="https://github.com/LeandroCarlino" target="_blank"
-          ><img src="img/icono-git.png" alt="Icono de Github" class="zoom"
-        /></a>
-      </section>
-      <p>
-        Muchas gracias por visitar mi portafolio. Que tengas un excelente
-        día/noche.
-      </p>
-    </footer>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+  <!-- Proyectos -->
+  <section class="projects-container" id="projects">
+    <h3 class="projects-header">Algunos de mis proyectos:</h3>
+    <div class="container">
+      <swiper-container style="--swiper-navigation-color: #1fbed5; --swiper-pagination-color: #1fbed5" class="mySwiper"
+        navigation="true" pagination="true" scrollbar="true">
+        <swiper-slide>
+          <a href="https://post-and-view.vercel.app/home" target="_blank">
+            <img class="project-image" src="img/angular-wallpaper.jpg" alt="Post and view" />
+            <p class="project-title">Post and View</p>
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="https://people-generator.vercel.app/" target="_blank">
+            <img class="project-image" src="img/angular-wallpaper.jpg" alt="Generador de personas" />
+            <p class="project-title">Generador de personas</p>
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="https://gifs-app-beryl.vercel.app" target="_blank">
+            <img class="project-image" src="img/angular-wallpaper.jpg" alt="Gifs App" />
+            <p class="project-title">Gifs App</p>
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="https://paises-app-eight.vercel.app" target="_blank">
+            <img class="project-image" src="img/angular-wallpaper.jpg" alt="Paises App" />
+            <p class="project-title">Paises App</p>
+          </a>
+        </swiper-slide>
+        <swiper-slide>
+          <a href="https://chihiro-page.netlify.app/" target="_blank">
+            <img class="project-image" src="img/htmlCssJs-wallpaper.jpg" alt="El viaje de Chihiro" />
+            <p class="project-title">El viaje de Chihiro</p>
+          </a>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="contact" id="contact">
+    <p>
+      ¡Vamos a trabajar juntos! Las siguientes imagenes te llevaran a mi gmail
+      o a mi LinkedIn respectivamente
+    </p>
+    <section class="footer-url">
+      <a href="mailto:leandro.ca.98@gmail.com"><img src="img/icono-gmail.png" alt="Icono de gmail" class="zoom" /></a>
+      <a href="https://www.linkedin.com/in/leandro-carlino/" target="_blank"><img src="img/icono-linkeding.png"
+          alt="Icono de Linkedin" class="zoom" /></a>
+      <a href="https://github.com/LeandroCarlino" target="_blank"><img src="img/icono-git.png" alt="Icono de Github"
+          class="zoom" /></a>
+    </section>
+    <p>
+      Muchas gracias por visitar mi portafolio. Que tengas un excelente
+      día/noche.
+    </p>
+  </footer>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
 </html>
