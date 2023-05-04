@@ -209,7 +209,7 @@ ul {
 
 .projects-header {
   background-color: #000000bd;
-  width: 300px;
+  width: fit-content;
   padding: 0.8em;
   border-radius: 10px;
   margin: auto;
