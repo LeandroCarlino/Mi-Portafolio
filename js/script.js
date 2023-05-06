@@ -20,3 +20,5 @@ function closePDF() {
   document.getElementById("open-button").style.display = "inline-block";
   document.getElementById("close-button").style.display = "none";
 }
+
+
